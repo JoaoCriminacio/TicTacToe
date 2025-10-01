@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  background-image: url('../public/background/quadra-de-basquete-de-cima.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  cursor: pointer;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  font-size: 0.8rem;
+  width: 6rem;
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 65%;
+  margin-left: -3.5rem;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
