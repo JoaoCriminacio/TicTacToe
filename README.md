@@ -1,59 +1,34 @@
-# JogoDaVelha
+<h1 align="center"> Tic Tac Toe - Jogo da Velha </h1>
+<p align ="center">Projeto realizado para treinar.</p>
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.4.
+<h2>Seleção de Jogadores</h2>
+<img width="1920" height="945" alt="image" src="https://github.com/user-attachments/assets/e06d1b1b-66e2-4862-8d85-f1bd182be10a" />
 
-## Development server
+<h2>Partida</h2>
+<img width="1920" height="945" alt="image" src="https://github.com/user-attachments/assets/35108bad-ca84-4528-b6a2-64aa50d98924" />
 
-To start a local development server, run:
 
-```bash
-ng serve
-```
+## 🛠 Tecnologias
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+<div align="center">
+  <table>
+    <tr>
+      <th>HTML</th>
+      <th>CSS</th>
+      <th>Tailwind</th>
+      <th>TypeScript</th>
+  	  <th>Angular</th>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=html" alt="HTML"></a></td>
+      <td align="center"><a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=css" alt="CSS"></a></td>
+      <td align="center"><a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind"></a></td>
+      <td align="center"><a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=typescript" alt="TypeScript"></a></td>
+  	  <td align="center"><a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=angular" alt="Angular"></a></td>
+    </tr>
+  </table>
+</div>
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 🌐 Acesse o Projeto
+O projeto pode ser acessado online por meio do GitHub Pages: <br>
+👉 [Jogo da Velha - Tic Tac Toe](https://joaocriminacio.github.io/TicTacToe/)
