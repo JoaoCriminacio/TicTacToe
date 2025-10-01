@@ -1,5 +1,4 @@
 <h1 align="center"> Tic Tac Toe - Jogo da Velha </h1>
-<p align ="center">Projeto realizado para treinar.</p>
 
 <h2>Seleção de Jogadores</h2>
 <img width="1920" height="945" alt="image" src="https://github.com/user-attachments/assets/e06d1b1b-66e2-4862-8d85-f1bd182be10a" />
@@ -31,3 +30,10 @@
 ## 🌐 Acesse o Projeto
 O projeto pode ser acessado online por meio do GitHub Pages: <br>
 👉 [Jogo da Velha - Tic Tac Toe](https://joaocriminacio.github.io/TicTacToe/)
+
+---
+
+> [!NOTE]
+> Este projeto foi desenvolvido apenas para fins educacionais e de prática em programação.  
+> Não possui nenhuma afiliação oficial com a NBA, jogadores ou quaisquer entidades relacionadas.  
+> Todos os nomes, logos e marcas mencionados são de propriedade de seus respectivos donos.
