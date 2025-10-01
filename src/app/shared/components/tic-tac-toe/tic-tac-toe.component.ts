@@ -8,12 +8,14 @@ import {IPlayer} from '../../models/player.model';
   styleUrl: './tic-tac-toe.component.css'
 })
 export class TicTacToeComponent {
-    protected player1 = input<IPlayer>();
-    protected player2 = input<IPlayer>();
+    player1 = input<IPlayer>();
+    player2 = input<IPlayer>();
 
     protected board: (string | undefined)[] = Array(9).fill(null);
     protected currentPlayer: string | undefined = this.player1()?.name;
     protected winner: string | undefined = undefined;
+    protected player1Points: number = 0;
+    protected player2Points: number = 0;
 
     private winningCombinations: number[][] = [
       [0,1,2],[3,4,5],[6,7,8],
@@ -38,6 +40,7 @@ export class TicTacToeComponent {
         this.board[index] = this.currentPlayer === this.player1()?.name ? this.player1()?.src : this.player2()?.src;
         if (this.checkWinner()) {
           this.winner = this.currentPlayer;
+          this.winner === this.player1()?.name ? this.player1Points++ : this.player2Points++;
         } else {
           this.currentPlayer = this.currentPlayer === this.player1()?.name ? this.player2()?.name : this.player1()?.name;
         }
