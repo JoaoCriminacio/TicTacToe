@@ -8,12 +8,12 @@ import {IPlayer} from '../../models/player.model';
   styleUrl: './tic-tac-toe.component.css'
 })
 export class TicTacToeComponent {
-    player1 = input<IPlayer>();
-    player2 = input<IPlayer>();
+    protected player1 = input<IPlayer>();
+    protected player2 = input<IPlayer>();
 
-    board: (string | undefined)[] = Array(9).fill(null);
-    currentPlayer: string | undefined = this.player1()?.name;
-    winner: string | undefined = undefined;
+    protected board: (string | undefined)[] = Array(9).fill(null);
+    protected currentPlayer: string | undefined = this.player1()?.name;
+    protected winner: string | undefined = undefined;
 
     private winningCombinations: number[][] = [
       [0,1,2],[3,4,5],[6,7,8],
@@ -29,11 +29,11 @@ export class TicTacToeComponent {
       });
     }
 
-    get isDraw() {
+    protected  get isDraw() {
       return this.board.every(cell => !!cell) && !this.winner;
     }
 
-    playMove(index: number) {
+    protected playMove(index: number) {
       if (!this.board[index] && !this.winner) {
         this.board[index] = this.currentPlayer === this.player1()?.name ? this.player1()?.src : this.player2()?.src;
         if (this.checkWinner()) {
@@ -44,13 +44,13 @@ export class TicTacToeComponent {
       }
     }
 
-    checkWinner() {
+    protected checkWinner() {
       return this.winningCombinations.some(comb =>
         comb.every(i => this.board[i] === (this.currentPlayer === this.player1()?.name ? this.player1()?.src : this.player2()?.src))
       );
     }
 
-    reset() {
+    protected reset() {
       this.board = Array(9).fill(null);
       this.currentPlayer = this.player1()?.name;
       this.winner = undefined;
