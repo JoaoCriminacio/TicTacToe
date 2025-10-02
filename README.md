@@ -1,10 +1,10 @@
 <h1 align="center"> Tic Tac Toe - Jogo da Velha </h1>
 
 <h2>Seleção de Jogadores</h2>
-<img width="1920" height="945" alt="image" src="https://github.com/user-attachments/assets/e06d1b1b-66e2-4862-8d85-f1bd182be10a" />
+<img width="1920" height="945" alt="image" src="https://github.com/user-attachments/assets/8aa8e715-454f-4fe2-8cf8-768347ed9ed3" />
 
 <h2>Partida</h2>
-<img width="1920" height="945" alt="image" src="https://github.com/user-attachments/assets/9fa2f6b4-0f16-438c-9e09-9bb49bc00616" />
+<img width="1920" height="945" alt="image" src="https://github.com/user-attachments/assets/a343979c-f3cb-420e-8aa1-3db719190304" />
 
 ## 🛠 Tecnologias
 
