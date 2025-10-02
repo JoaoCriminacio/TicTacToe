@@ -14,19 +14,24 @@
           @for (player of players; let i = $index; track i) {
             <div class="w-20 h-20 sm:w-28 sm:h-28 flex items-center justify-center text-4xl font-bold bg-orange-200 border-4 border-orange-700 hover:bg-orange-300 transition"
                  (click)="selectPlayer(player, 'player1')">
-              <div class="tooltip">
-                <img [src]="player.src" [alt]="player.name" class="w-14 h-14 sm:w-20 sm:h-20"/>
+
+              <div class="tooltip flex items-center justify-center w-14 h-14 sm:w-20 sm:h-20">
+                <img [src]="player.src" [alt]="player.name" class="w-full h-full object-cover"/>
                 <span class="tooltiptext">{{ player.name }}</span>
               </div>
+
             </div>
           }
         </div>
       </div>
 
-      <div class="flex flex-col items-center justify-center gap-y-2 p-2 w-32 h-44 sm:w-44 sm:h-52 bg-white/85 rounded-lg"
+      <div class="flex flex-col items-center justify-center gap-y-4 sm:gap-y-2 p-2 w-32 h-44 sm:w-44 sm:h-52 bg-white/85 rounded-lg"
            [ngClass]="{'invisible': !player1}">
         <h2 class="font-bold text-orange-600 text-center">{{ player1?.name }}</h2>
-        <img [src]="player1?.src" [alt]="player1?.name" class="w-24 h-24 sm:w-36 sm:h-36">
+
+        <div class="w-24 h-24 sm:w-36 sm:h-36">
+          <img [src]="player1?.src" [alt]="player1?.name" class="w-full h-full object-cover">
+        </div>
       </div>
 
       <div class="flex flex-col items-center justify-center gap-y-2 p-2 w-14 h-14 bg-white/85 rounded-lg"
@@ -34,10 +39,13 @@
         <h2 class="text-5xl font-bold text-orange-600 text-center">X</h2>
       </div>
 
-      <div class="flex flex-col items-center justify-center gap-y-2 p-4 w-32 h-44 sm:w-44 sm:h-52 bg-white/85 rounded-lg"
+      <div class="flex flex-col items-center justify-center gap-y-4 sm:gap-y-2 p-2 w-32 h-44 sm:w-44 sm:h-52 bg-white/85 rounded-lg"
            [ngClass]="{'invisible': !player2}">
         <h2 class="font-bold text-orange-600 text-center">{{ player2?.name }}</h2>
-        <img [src]="player2?.src" [alt]="player2?.name" class="w-24 h-24 sm:w-36 sm:h-36">
+
+        <div class="w-24 h-24 sm:w-36 sm:h-36">
+          <img [src]="player2?.src" [alt]="player2?.name" class="w-full h-full object-cover">
+        </div>
       </div>
 
       <div class="flex flex-col gap-y-2 p-6 bg-white/85 rounded-lg mb-8 xl:mb-0">
@@ -48,10 +56,12 @@
           @for (player of players; let i = $index; track i) {
             <div class="w-20 h-20 sm:w-28 sm:h-28 flex items-center justify-center text-4xl font-bold bg-orange-200 border-4 border-orange-700 hover:bg-orange-300 transition"
                  (click)="selectPlayer(player, 'player2')">
-              <div class="tooltip">
-                <img [src]="player.src" [alt]="player.name" class="w-14 h-14 sm:w-20 sm:h-20"/>
+
+              <div class="tooltip flex items-center justify-center w-14 h-14 sm:w-20 sm:h-20">
+                <img [src]="player.src" [alt]="player.name" class="w-full h-full object-cover"/>
                 <span class="tooltiptext">{{ player.name }}</span>
               </div>
+
             </div>
           }
         </div>

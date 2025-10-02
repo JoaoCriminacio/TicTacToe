@@ -1,8 +1,13 @@
 <div class="flex flex-col md:flex-row items-center justify-between gap-x-16 lg:gap-x-52 gap-y-16 mt-8 mb-8 xl:mt-0 xl:mb-0">
 
-  <div class="flex flex-col items-center justify-center gap-y-2 p-2 w-40 h-48 xl:w-44 xl:h-52 bg-white/85 rounded-lg">
+  <div class="flex flex-col items-center justify-center gap-y-2 p-2 w-40 h-52 xl:w-44 xl:h-56 bg-white/85 rounded-lg">
     <h2 class="font-bold text-orange-600 text-center">{{ player1()?.name }}</h2>
-    <img [src]="player1()?.src" [alt]="player1()?.name" class="w-32 h-32 xl:w-36 xl:h-36">
+
+    <div class="flex items-center justify-center w-32 h-32 xl:w-36 xl:h-36">
+      <img [src]="player1()?.src" [alt]="player1()?.name"
+           class="w-full h-full object-covers"/>
+    </div>
+
     <span class="font-bold text-orange-600 text-center">Vitórias: {{ player1Points }}</span>
   </div>
 
@@ -12,7 +17,9 @@
         <div class="w-20 h-20 xl:w-28 xl:h-28 flex items-center justify-center text-4xl font-bold bg-orange-200 border-4 border-orange-700 hover:bg-orange-300 transition"
              (click)="playMove(i)">
           @if (cell) {
-            <img [src]="cell" alt="jogador" class="w-14 h-14 xl:w-20 xl:h-20" />
+            <div class="flex items-center justify-center w-14 h-14 sm:w-20 sm:h-20">
+              <img [src]="cell" alt="jogador" class="w-full h-full object-cover"/>
+            </div>
           }
         </div>
       }
@@ -34,9 +41,14 @@
     </button>
   </div>
 
-  <div class="flex flex-col items-center justify-center gap-y-2 p-2 w-40 h-48 xl:w-44 xl:h-52 bg-white/85 rounded-lg">
+  <div class="flex flex-col items-center justify-center gap-y-2 p-2 w-40 h-52 xl:w-44 xl:h-56 bg-white/85 rounded-lg">
     <h2 class="font-bold text-orange-600 text-center">{{ player2()?.name }}</h2>
-    <img [src]="player2()?.src" [alt]="player2()?.name" class="w-32 h-32 xl:w-36 xl:h-36">
+
+    <div class="flex items-center justify-center w-32 h-32 xl:w-36 xl:h-36">
+      <img [src]="player2()?.src" [alt]="player2()?.name"
+           class="w-full h-full object-cover"/>
+    </div>
+
     <span class="font-bold text-orange-600 text-center">Vitórias: {{ player2Points }}</span>
   </div>
 
