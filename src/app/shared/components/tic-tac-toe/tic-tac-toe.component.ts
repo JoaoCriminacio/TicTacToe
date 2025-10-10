@@ -3,6 +3,7 @@ import {IPlayer} from '../../models/player.model';
 
 @Component({
   selector: 'app-tic-tac-toe',
+  standalone: true,
   imports: [],
   templateUrl: './tic-tac-toe.component.html',
   styleUrl: './tic-tac-toe.component.css'

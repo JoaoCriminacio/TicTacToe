@@ -5,6 +5,7 @@ import {NgClass} from '@angular/common';
 
 @Component({
   selector: 'app-home',
+  standalone: true,
   imports: [
     TicTacToeComponent,
     NgClass
