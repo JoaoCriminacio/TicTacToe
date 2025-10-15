@@ -17,6 +17,7 @@ export class TicTacToeComponent {
     protected winner: string | undefined = undefined;
     protected player1Points: number = 0;
     protected player2Points: number = 0;
+    protected startingPlayer: string | undefined = this.player1()?.name;
 
     private winningCombinations: number[][] = [
       [0,1,2],[3,4,5],[6,7,8],
@@ -27,6 +28,7 @@ export class TicTacToeComponent {
     constructor() {
       effect(() => {
         if (this.player1() && this.player2() && !this.currentPlayer) {
+          this.startingPlayer = this.player1()?.name;
           this.currentPlayer = this.player1()?.name;
         }
       });
@@ -56,7 +58,8 @@ export class TicTacToeComponent {
 
     protected reset() {
       this.board = Array(9).fill(null);
-      this.currentPlayer = this.player1()?.name;
+      this.startingPlayer =
+      this.currentPlayer = this.startingPlayer === this.player1()?.name ? this.player2()?.name : this.player1()?.name;
       this.winner = undefined;
     }
 }
