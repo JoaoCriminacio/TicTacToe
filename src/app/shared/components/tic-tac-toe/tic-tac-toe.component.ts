@@ -58,8 +58,8 @@ export class TicTacToeComponent {
 
     protected reset() {
       this.board = Array(9).fill(null);
-      this.startingPlayer =
-      this.currentPlayer = this.startingPlayer === this.player1()?.name ? this.player2()?.name : this.player1()?.name;
+      this.startingPlayer = this.startingPlayer === this.player1()?.name ? this.player2()?.name : this.player1()?.name;
+      this.currentPlayer = this.startingPlayer;
       this.winner = undefined;
     }
 }
